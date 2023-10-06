@@ -59,16 +59,16 @@ function divide(dividend, divisor) {
     return dividend / divisor;
 }
 
-function divideNumbers() {
+const divideNumbers = () => {
 
-    let dividend = Number(document.querySelector("dividend").value);
-    let divisor = Number(document.querySelector("divisor").value);
+    let dividend = Number(document.querySelector("#dividend").value);
+    let divisor = Number(document.querySelector("#divisor").value);
 
     document.querySelector('#quotient').value = divide(dividend, divisor);
 
 };
 
-document.querySelector('divideNumbers').addEventListener('click', divideNumbers);
+document.querySelector('#divideNumbers').addEventListener('click', divideNumbers);
 
 
 /* ARRAY METHODS - Functional Programming */
