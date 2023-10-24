@@ -4,10 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css">
   <title>W01: Programming Task</title>
 </head>
 
 <body>
+  <nav>
+    <ul id="menu">
+      <li><a id="toggleMenu">&equiv;</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="w01-task.html"class="active">W1 Task</a></li>
+      <li><a href="w03-task.html">W3 Task</a></li>
+      <li><a href="w04-task.html">W4 Task</a></li>
+      <li><a href="w05-task.html">W5 Task</a></li>
+      <li><a href="project.html">Project</a></li>
+    </ul>
+  </nav>
   <h1>W01: Programming Task</h1>
   <h2>Christopher Vang</h2>
   <p>All the work will be displayed in the console window of the browser.
@@ -16,5 +28,13 @@
 
   <script src="w01-task.js"></script>
 
+  <footer>
+    &copy;<span id="year"></span> | Task 01 | CSE 121b
+  </footer>
+  <script src="scripts/main.js"></script>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+  <script src="scripts/w01-task.js"></script>
 </body>
 </html>
